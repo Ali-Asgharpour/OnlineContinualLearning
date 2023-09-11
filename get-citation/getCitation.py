@@ -37,5 +37,5 @@ def sheetAndReplace(path):
        df.loc[i , 'Citation'] = citation    #modify dataframe
     df.to_csv('result.csv' , index=False)   #crate new result.csv with dataframe
 
-path = 'sheet.csv'
+path = input('enter path:')
 sheetAndReplace(path)
