@@ -12,11 +12,11 @@ def checkRelevace(abs):
     check_high = re.search(regu_ex_for_high , abs , re.IGNORECASE)   #search on abs for regular expersion high
     check_medium = re.search(regu_ex_for_medium ,abs  , re.IGNORECASE)  #search on abs for regular expersion medium
     if check_high:
-        return "high"
+        return "High"
     elif check_medium:
-        return "medium"
+        return "Medium"
     else:
-        return "low"
+        return "Low"
     
 df = pd.read_csv("sheet.csv")
 for i in range(0 , len(df.index)): #move on all rows
